@@ -16,7 +16,7 @@ const poster = document.querySelector('#poster');
 const description = document.querySelector('#description');
 const price = document.querySelector('#price');
 const made = document.querySelector('#made');
-const remaining = document.querySelector('#remaining');
+let remaining = document.querySelector('#remaining');
 const mealList = document.querySelector('#list');
 const mealTitle = document.querySelector('#name');
 const button = document.querySelector('#orderbtn')
@@ -30,7 +30,7 @@ mealList.replaceChildren();
 The function gets elements using their ID from the json file. 
 We use this to access/modify html elements using JS code. 
 */
-function getAllMeals(id = 1){
+function getAllMeals(id='0'){
     fetch("http://localhost:3000/menu" + id)
     // Use a then method to convert the response to json for easy access by the JS code. 
     .then(res => res.json())
@@ -54,7 +54,7 @@ function setPosterDetails(data){
     poster.src = data.poster;
     //The next 2 line set the logic for reducing the number of tickets available.
     // remainingPlates.textContent = (data.made - data.remaining)
-    let remainingPlates = (data.made - data.remaining)
+    let remainingPlates = data.remaining
     console.log(remainingPlates)
     // Remaining is set as a paremeter for a function ticketNumber. 
     // The function ticketNumber is called to reduce the number of tickets available.
@@ -83,12 +83,14 @@ function plateNumber(remainingPlates){
     button.addEventListener('click',(e) => {
         // e.preventDefault() prevents the form from submitting to the server and refreshing the page automatically.
         e.preventDefault();
-        console.log(e)
+
             if (remainingPlates > 0){
                 remainingPlates -= 1;
-            remainingPlates.textContent = remainingPlates;
+            remainingPlates.textContent = remaining;
+            console.log("working")
             }
             else if (remainingPlates <= 0){
+                console.log("sold out")
                 button.textContent = "Sold Out"
             }
         })

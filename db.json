@@ -5,7 +5,7 @@
         "meal": "Juicy Beef Burger",
         "price": 27,
         "made": 100,
-        "remaining": 15,
+        "remaining": 5,
         "description": "A normal american burger with extra cheese. The burger is way bigger than the average burger. ",
         "poster": "./assets/burger.jpg"
       },
