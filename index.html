@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./assets/index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<h2>Three Unequal Columns</h2>
+<!-- side menu -->
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2 class = "menutitle">Menu List</h2>
+	<ul class="parts" id="list"></ul>
+  </div>
+  <!-- poster -->
+  <div class="column middle" style="background-color:#bbb;">
+    <h2 class = "postertitle">Meal Images</h2>
+    <img id="poster" src="./assets/food-placeholder.jpg" alt="PLACEHOLDER" width="300px" height="300px">
+  </div>
+  <!-- card -->
+  <div class="column right" style="background-color:#ccc;">
+    <div class="card" id="rightcard" >
+      <h2 class = "mealtitle" 	id="name" color="black">Name of the meal</h2>
+  </div>
+      <br><br><br>
+      <div>
+        <p class="description" id="description"><span style="color: whitesmoke;">This describes the meal being sold </span></p>
+      </div>
+      <div>
+        <!-- <p class="cardplatesmade"><span id = "made"	>[X]</span> plates made</span></p>  -->
+        <span>
+          <span id= "remaining">[XX]</span>
+         plates remaining</span>
+         <br><br>
+         <span>
+          <span id= "price">[XXX]</span>
+         price</span>
+      </div>
+      <div class = "btn">
+        <button type="button" class="btn btn-dark" id="orderbtn">Order</button>
+      </div>
+  </div>
+</div>
+<script src="./src/index.js"></script>
+</body>
+</html>
