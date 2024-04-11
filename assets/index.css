@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+ /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 25%;
+  height: 600px;
+}
+
+.middle {
+  height: 600px;
+  width: 50%;
+      border-style: dashed;
+    border-width: 3px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-color: grey;
+    box-shadow: 5.7px 11.4px 11.4px hsl(0deg 0% 0% / 0.32);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mealtitle{
+  background-color: blueviolet;
+  margin: 4px 4px 4px 4px !important;
+  color: white;
+  text-align: center;
+}
+.menutitle,.postertitle{
+  background-color: blueviolet;
+  margin: 0 8px 8px 8px;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+.description{
+  height: 40px;
+  margin: 0 0 0 0;
+  color: white;
+  text-align: left;
+  padding: 0;
+}
