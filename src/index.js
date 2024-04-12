@@ -2,15 +2,7 @@
 // Your code here
 /* 
 The .json file has objects with data needed to populate the html elements. 
-We use this to make it easier access/modify html elements using JS code.
-*/
-// meal, meals sold, description, poster
-// const filmTitle = document.querySelector('#title');
-// //const runTime = document.querySelector('#runtime');
-// const filmInfo = document.querySelector('#film-info');
-// const showTime = document.querySelector('#showtime');
-// const ticketNum = document.querySelector('#ticket-num');
-// const button = document.querySelector('#buy-ticket');
+We use this to make it easier access/modify html elements using JS code. */
 
 const poster = document.querySelector('#poster');
 const description = document.querySelector('#description');
@@ -54,7 +46,7 @@ function setPosterDetails(data){
     poster.src = data.poster;
     //The next 2 line set the logic for reducing the number of tickets available.
     // remainingPlates.textContent = (data.made - data.remaining)
-    let remainingPlates = data.remaining
+    let remainingPlates = `${data.remaining} `;
     console.log(remainingPlates)
     // Remaining is set as a paremeter for a function ticketNumber. 
     // The function ticketNumber is called to reduce the number of tickets available.
@@ -86,8 +78,8 @@ function plateNumber(remainingPlates){
 
             if (remainingPlates > 0){
                 remainingPlates -= 1;
-            remainingPlates.textContent = remaining;
-            console.log("working")
+            remaining.textContent = remainingPlates;
+            console.log("working");
             }
             else if (remainingPlates <= 0){
                 console.log("sold out")
@@ -97,12 +89,7 @@ function plateNumber(remainingPlates){
         
     }
 
+getAllMeals();
+getMeals();
 
-
-function initialize(){
-    getAllMeals();
-    getMeals();
-    
-}
-initialize();
-console.log("after.")
+console.log("after.");

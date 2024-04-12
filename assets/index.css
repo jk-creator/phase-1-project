@@ -33,13 +33,13 @@
 }
 
 .mealtitle{
-  background-color: blueviolet;
-  margin: 4px 4px 4px 4px !important;
+  background-color: orangered;
+  margin: 0 8px 8px 8px;
   color: white;
   text-align: center;
 }
 .menutitle,.postertitle{
-  background-color: blueviolet;
+  background-color: orangered;
   margin: 0 8px 8px 8px;
   color: white;
   text-align: center;
