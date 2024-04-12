@@ -39,17 +39,15 @@ function setPosterDetails(data){
     // The lines below takes the values from the object in the database and 
     //passes the values to the function as arguments. 
     mealTitle.textContent = data.title;
-    //runTime.textContent = `${data.runtime} minutes`;
     description.textContent = data.description;
     price.textContent = data.price;
     remaining.textContent = `${data.remaining} `;
     poster.src = data.poster;
-    //The next 2 line set the logic for reducing the number of tickets available.
-    // remainingPlates.textContent = (data.made - data.remaining)
+    //The next 2 line set the logic for reducing the number of plates available.
     let remainingPlates = `${data.remaining} `;
     console.log(remainingPlates)
-    // Remaining is set as a paremeter for a function ticketNumber. 
-    // The function ticketNumber is called to reduce the number of tickets available.
+    // Remaining is set as a paremeter for a function plateNumber. 
+    // The function ticketNumber is called to reduce the number of Plates available.
     plateNumber(remainingPlates);
 }
 
@@ -71,7 +69,7 @@ function getMeals(){
     
 }
 function plateNumber(remainingPlates){
-    // The event listener below is triggered when the button is clicked to reduce the number of tickets.
+    // The event listener below is triggered when the button is clicked to reduce the number of Plates.
     button.addEventListener('click',(e) => {
         // e.preventDefault() prevents the form from submitting to the server and refreshing the page automatically.
         e.preventDefault();
