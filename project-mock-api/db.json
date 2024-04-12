@@ -1,0 +1,59 @@
+{
+    "menu": [
+      {
+        "id": "1",
+        "meal": "Juicy Beef Burger",
+        "price": 27,
+        "made": 100,
+        "remaining": 5,
+        "description": "A normal american burger with extra cheese. The burger is way bigger than the average burger. ",
+        "poster": "./assets/burger.jpg"
+      },
+      {
+        "id": "2",
+        "meal": "Crispy Chicken Sandwich",
+        "price": 35,
+        "made": 100,
+        "remaining": 70,
+        "description": "A delicious crispy chicken sandwich with lettuce and mayo.",
+        "poster": "./assets/chicken.jpg"
+    },
+    {
+        "id": "3",
+        "meal": "Vegetarian Quinoa Salad",
+        "price": 20,
+        "made": 100,
+        "remaining": 80,
+        "description": "A healthy and flavorful vegetarian quinoa salad with fresh vegetables.",
+        "poster": "./assets/salad.jpg"
+    },
+    {
+        "id": "4",
+        "meal": "Classic Margherita Pizza",
+        "made": 100,
+        "price": 40,
+        "remaining": 60,
+        "description": "A classic margherita pizza with fresh mozzarella and basil.",
+        "poster": "./assets/pizza.jpg"
+    },
+    {
+        "id": "5",
+        "meal": "Grilled Salmon with Asparagus",
+        "made": 100,
+        "price": 15,
+        "remaining": 85,
+        "description": "Grilled salmon served with a side of seasoned asparagus.",
+        "poster": "./assets/salmon.jpg"
+    },
+    {
+        "id": "6",
+        "meal": "Fried Rice",
+        "made": 100,
+        "price": 25,
+        "remaining": 75,
+        "description": "Fried rice served with fresh vegetables.",
+        "poster": "./assets/rice.jpg"
+    }
+    ]
+  }
+  
